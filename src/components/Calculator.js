@@ -1,30 +1,28 @@
 import React from 'react';
 
-const Calculator = () => {
-  return (
-   <div className='calculator-grid'>
-    <div className='output'>0</div>
-    <button>AC</button>
-    <button>+/-</button>
-    <button>%</button>
-    <button className='orange-btn'>÷</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button className='orange-btn'>X</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button className='orange-btn'>-</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button className='orange-btn'>+</button>
-    <button className='span-two'>0</button>
-    <button>.</button>
-    <button className='orange-btn'>=</button>
-   </div>
-  );
-}
+const Calculator = () => (
+  <div className="calculator-grid">
+    <div className="output"><span>0</span></div>
+    <button type="submit">AC</button>
+    <button type="submit">+/-</button>
+    <button type="submit">%</button>
+    <button type="submit" className="orange-btn">÷</button>
+    <button type="submit">7</button>
+    <button type="submit">8</button>
+    <button type="submit">9</button>
+    <button type="submit" className="orange-btn">X</button>
+    <button type="submit">4</button>
+    <button type="submit">5</button>
+    <button type="submit">6</button>
+    <button type="submit" className="orange-btn">-</button>
+    <button type="submit">1</button>
+    <button type="submit">2</button>
+    <button type="submit">3</button>
+    <button type="submit" className="orange-btn">+</button>
+    <button type="submit" className="span-two">0</button>
+    <button type="submit">.</button>
+    <button type="submit" className="orange-btn">=</button>
+  </div>
+);
 
 export default Calculator;
