@@ -2,15 +2,25 @@ import React, { Component } from 'react';
 import calculate from '../logic/calculate';
 
 // eslint-disable-next-line react/prefer-stateless-function
-export class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
-  }
+
+const Calculator = () => {
+  const [state, setState] = useState(0);
+  // eslint-disable-next-line
+  const [calculatorBtns, setArray] = useState(['AC', '+/-', '%', 7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.']);
+
+  const handleClick = (e) => {
+    const value = e.target.textContent;
+    setState((state) => calculate(state, value));
+   };
+// export class Calculator extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       total: 0,
+//       next: null,
+//       operation: null,
+//     };
+//   }
 
   // Event listenter
     eventHandler = (e) => {
