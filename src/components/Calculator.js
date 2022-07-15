@@ -6,21 +6,12 @@ import calculate from '../logic/calculate';
 const Calculator = () => {
   const [state, setState] = useState(0);
   // eslint-disable-next-line
-  const [calculatorBtns, setArray] = useState(['AC', '+/-', '%', 7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.']);
+  const [buttons, setArray] = useState(['AC', '+/-', '%', 7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.']);
 
-  const handleClick = (e) => {
+  const eventHandler = (e) => {
     const value = e.target.textContent;
     setState((state) => calculate(state, value));
    };
-// export class Calculator extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       total: 0,
-//       next: null,
-//       operation: null,
-//     };
-//   }
 
   // Event listenter
     eventHandler = (e) => {
@@ -34,24 +25,26 @@ const Calculator = () => {
       return (
         <div className="calculator-grid">
           <div className="output"><span>{result}</span></div>
-          <button type="submit" onClick={this.eventHandler}>AC</button>
-          <button type="submit" onClick={this.eventHandler}>+/-</button>
-          <button type="submit" onClick={this.eventHandler}>%</button>
+          <button type="
+
+"}>AC</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">+/-</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">%</button>
           <button type="submit" onClick={this.eventHandler} className="orange-btn">÷</button>
-          <button type="submit" onClick={this.eventHandler}>7</button>
-          <button type="submit" onClick={this.eventHandler}>8</button>
-          <button type="submit" onClick={this.eventHandler}>9</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">7</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">8</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">9</button>
           <button type="submit" onClick={this.eventHandler} className="orange-btn">x</button>
-          <button type="submit" onClick={this.eventHandler}>4</button>
-          <button type="submit" onClick={this.eventHandler}>5</button>
-          <button type="submit" onClick={this.eventHandler}>6</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">4</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">5</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">6</button>
           <button type="submit" onClick={this.eventHandler} className="orange-btn">-</button>
-          <button type="submit" onClick={this.eventHandler}>1</button>
-          <button type="submit" onClick={this.eventHandler}>2</button>
-          <button type="submit" onClick={this.eventHandler}>3</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">1</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">2</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">3</button>
           <button type="submit" onClick={this.eventHandler} className="orange-btn">+</button>
           <button type="submit" onClick={this.eventHandler} className="span-two">0</button>
-          <button type="submit" onClick={this.eventHandler}>.</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">.</button>
           <button type="submit" onClick={this.eventHandler} className="orange-btn">=</button>
         </div>
       );
