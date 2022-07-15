@@ -25,9 +25,7 @@ const Calculator = () => {
       return (
         <div className="calculator-grid">
           <div className="output"><span>{result}</span></div>
-          <button type="
-
-"}>AC</button>
+          <button type="submit" onClick={this.eventHandler} className="buttons">AC</button>
           <button type="submit" onClick={this.eventHandler} className="buttons">+/-</button>
           <button type="submit" onClick={this.eventHandler} className="buttons">%</button>
           <button type="submit" onClick={this.eventHandler} className="orange-btn">÷</button>
