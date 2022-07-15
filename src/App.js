@@ -9,7 +9,7 @@ export class App extends Component {
         <Calculator />
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;
