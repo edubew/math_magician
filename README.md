@@ -5,7 +5,7 @@
 - Read a random math-related quote.
 
 ## Built with
-- Html
+- React
 - CSS
 - JavaScript
 
