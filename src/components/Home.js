@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div>
+    <div className="home-page">
       <h2>Welcome to our page!</h2>
       <p>
         Mathematics as an expression of the human mind reflects the active will,

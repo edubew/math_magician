@@ -8,12 +8,50 @@ body {
   background-color: aliceblue;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+header .title {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+}
+
+.home-page h2 {
+  margin-bottom: 24px;
+}
+
+.home-page p {
+  max-width: 80vw;
+  margin-bottom: 24px;
+}
+
+nav a {
+  padding: 6px;
+  color: #000;
+  text-decoration: none;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 5%;
+}
+
+.calculator-container h2 {
+  margin-top: 24px;
+}
+
 .calculator-grid {
   display: grid;
   margin-top: 2rem;
-  justify-content: center;
   grid-template-columns: repeat(4, 6rem);
-  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  grid-template-rows: minmax(5rem, auto) repeat(7, 4rem);
 }
 
 .calculator-grid button {
@@ -44,3 +82,12 @@ body {
 .orange-btn {
   background-color: rgb(236, 159, 17);
 } 
+
+.home-page {
+  margin: 2%;
+}
+
+.quote-container p {
+  margin: 15%;
+  width: 80vw;
+}

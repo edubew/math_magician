@@ -11,12 +11,14 @@ export class App extends Component {
   render() {
     return (
       <Router>
-        <h2>Math Magicians</h2>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/calculator">Calculator</Link>
-          <Link to="/quote">Quote</Link>
-        </nav>
+        <header>
+          <Link className="title" to="/">Math Magicians</Link>
+          <nav>
+            <Link to="/">Home</Link>
+            <Link to="/calculator">Calculator</Link>
+            <Link to="/quote">Quote</Link>
+          </nav>
+        </header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />

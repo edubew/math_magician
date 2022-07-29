@@ -12,7 +12,7 @@ const Calculator = () => {
   const { next, total, operation } = currentState;
   const result = `${total || operation || next ? `${total || ''} ${operation || ''} ${next || ''}` : 0}`;
   return (
-    <>
+    <div className="calculator-container">
       <h2>Lets do some Maths</h2>
       <div className="calculator-grid">
         <div className="output">
@@ -76,7 +76,7 @@ const Calculator = () => {
           =
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
